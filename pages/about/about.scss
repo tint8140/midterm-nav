@@ -1,0 +1,51 @@
+.about {
+  min-height: calc(100vh - 100px);
+  background-color: rgb(93, 205, 214);
+  margin: 0 150px;
+  padding: 30px;
+
+  .content-holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      // width: 300px;
+      padding: 10px;
+    }
+  }
+  .image-holder {
+    width: 500px;
+    height: 200px;
+    margin: 0 auto;
+    background-image: url(../images/waterfall.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 800px) {
+  .about {
+    min-height: calc(100vh - 100px);
+    margin: 0 50px;
+
+    .content-holder {
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .about {
+    .image-holder {
+      width: 250px;
+      height: 100px;
+    }
+    .content-holder {
+      flex-direction: column;
+      display: flex;
+    }
+  }
+}

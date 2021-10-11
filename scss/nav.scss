@@ -1,0 +1,31 @@
+nav {
+  height: 50px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+
+  justify-content: space-evenly;
+  a {
+    // width: 50%;
+    color: white;
+    text-decoration: none;
+  }
+  a:hover {
+    color: pink;
+  }
+}
+
+@media (max-width: 800px) {
+  nav {
+    flex-direction: column;
+    height: 100px;
+    align-items: flex-end;
+    right: 0;
+    padding-right: 30px;
+    a {
+      text-decoration: none;
+      color: white;
+      text-transform: uppercase;
+    }
+  }
+}

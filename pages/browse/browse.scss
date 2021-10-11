@@ -1,0 +1,29 @@
+.browse {
+  min-height: calc(100vh - 100px);
+  background-color: rgb(93, 205, 214);
+  margin: 0 150px;
+  padding: 30px;
+
+  .image-holder-holder {
+    padding: 0 30%;
+    .image-holder {
+      width: 200px;
+      height: 100px;
+      margin: 10px auto;
+      background-image: url(../images/waterfall.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .browse {
+    min-height: calc(100vh - 150px);
+    margin: 0 50px;
+    .image-holder-holder {
+      padding: 0 10%;
+    }
+  }
+}
